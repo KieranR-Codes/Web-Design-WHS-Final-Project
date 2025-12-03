@@ -1,0 +1,55 @@
+@charset "utf-8";
+@font-face {
+	font-family: ArialNarrow7;
+	src: url(../font/arial_narrow_7.ttf);
+}
+
+/* 
+	This stylesheet was created by: 
+		Author: Kieran Rose
+		Date: 01/03/2025
+		Project: Final Project, Slideshow stylesheet
+*/
+
+
+
+/* website iframe styles */
+
+.webframe {
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	width: 75%;
+	height: 750px;
+}
+
+#webselect {
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(10, 10, 10, 0.6);
+	font-family: ArialNarrow7;
+	color: white;
+	font-size: 19px;
+	transition: 0.6s ease;
+	padding: 15px 15px;
+	margin-bottom: 15px;
+	transition: 0.2s ease;
+}
+
+#webselect:hover {
+	cursor: pointer;
+	background-color: rgba(10, 10, 10, 1);
+	transition: 0.2s ease;
+}
+
+@media screen and (min-width: 3000px) {
+	.webframe {
+		height: 1500px;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	.webframe {
+		height: 2500px;
+	}
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* 
+	This stylesheet was created by: 
+		Author: Kieran Rose
+		Date: 01/15/2025
+		Project: Final Project, Media stylesheet
+*/
+
+
+/* media table styles */
+
+.media-list {
+	max-width: 100%;
+	display: inline-block;
+	contain: layout;
+	align-items: center;
+	list-style: none;
+}
+
+.media-list li {
+	width: 640px;
+	display: inline-block;
+	overflow-wrap: auto;
+}
+
+/* video styles */
+
+.smallvid {
+	display: block;
+	width: 100%;
+	height: 360px;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+.vid {
+	display: block;
+	width: 1280px;
+	height: 720px;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+/* music styles */
+
+.applemusic {
+	display: block;
+	width: 640px;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+
+
+/* text and div styles */
+
+.media-container {
+	width: 100%;
+	text-align: center;
+}
+
+.mediadesc {
+	max-width: 640px;
+	text-align: left;
+}
+
+
+/* audio styles */
+
+.audiothumb {
+	width: 640px;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+	.vid {
+		width: 100%;
+		height: auto;
+	}
+	
+	.mediadesc {
+		width: 100%;
+	}
+	
+	.media-list li {
+		max-width: 100%;
+	}
+	
+	.applemusic {
+		width: 100%;
+	}
+	
+	.audiothumb {
+		width: 100%;
+	}
+}

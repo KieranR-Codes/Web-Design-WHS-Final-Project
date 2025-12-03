@@ -1,0 +1,427 @@
+@charset "utf-8";
+@font-face {
+	font-family: ArialNarrow7;
+	src: url(../font/arial_narrow_7.ttf);
+}
+
+
+/* 
+	This stylesheet was created by: 
+		Author: Kieran Rose
+		Date: 12/10/2024
+		Project: Final Project, Main stylesheet
+*/
+
+
+
+
+/* ============================================================ Basic Body Styles ============================================================ */
+
+*{
+	box-sizing: border-box;
+ }
+
+
+html {
+	background-image: url("../images/bgimage.jpg");
+	font-family: ArialNarrow7;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: rgb(255, 255, 255);
+}
+
+.center {
+	text-align: center;
+}
+
+a {
+	color: rgb(120, 200, 255);
+	transition: color 0.6s ease-out, font-size 0.3s ease-out, opacity 0.1s ease-out;
+}
+
+a#imglink:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 80%;
+}
+
+a#txtlink:hover {
+	color: rgb(255, 0, 0);
+}
+
+a#navbutton {
+	display: none;
+}
+
+
+
+
+/* ============================================================ Nav Styles ============================================================ */
+
+nav#top {
+	margin-top: 20px;
+	background-color: rgba(10, 10, 10, 0.6);
+	border-radius: 20px;
+	display: block;
+	height: auto;
+	transition: 0.4s ease;
+	font-size: 1em;
+	word-spacing: 20px;
+	text-align: center;
+	width: auto;
+	vertical-align: baseline;
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	text-wrap: nowrap;
+	overflow: hidden;
+}
+
+nav#top:hover {
+	margin-top: 20px;
+	background-color: rgba(10, 10, 10, 1);
+	display: block;
+	font-size: 3em;
+}
+
+nav#top a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+nav#top:hover a:hover {
+	color: rgb(255, 0, 0);
+	font-size: 1.6em;
+	transition: 0.3s ease;
+}
+
+.horizontal {
+	list-style-type: none;
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+.horizontal li {
+	display: inline;
+	text-align: center;
+	vertical-align: baseline;
+	justify-content: space-evenly;
+}
+
+
+
+
+
+/* ============================================================ Image Styles ============================================================ */
+
+.logo {
+	max-width: 95%;
+	opacity: 100%;
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	object-fit: scale-down;
+}
+
+.flag {
+	border-radius: 3px;
+	height: 1em;
+}
+
+
+
+
+
+/* ============================================================ box styles ============================================================ */
+
+#gray {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding: 15px 15px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+
+#graynohover {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding: 15px 15px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+#gray:hover {
+	background: rgba(10, 10, 10, 1);
+	transition: 0.2s ease;
+}
+
+#graynocenter {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding: 15px 15px;
+}
+
+#graynocenter:hover {
+	background: rgba(10, 10, 10, 1);
+	transition: 0.2s ease;
+}
+
+#graybtn {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	width: max-content;
+	color: white;
+	border: none;
+	font-size: 19px;
+}
+
+#graybtn p {
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family: ArialNarrow7;
+}
+
+#graybtn:hover {
+	background: rgba(10, 10, 10, 1);
+	transition: 0.4s ease;
+	color: red;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#graynotmaxwidth {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding: 15px 15px;
+	margin: 15px;
+	width: max-content;
+}
+
+#graynotmaxwidth:hover {
+	background: rgba(10, 10, 10, 1);
+	transition: 0.2s ease;
+}
+
+
+
+
+/* ============================================================ Text Styles ============================================================ */
+
+.title {
+	vertical-align: middle;
+	text-align: center;
+	font-size: 3em;
+	word-wrap: normal;
+	font-weight: bold;
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	max-height: 500px;
+	object-fit: scale-down;
+}
+
+.title h1 {
+	max-width: 85%;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.head {
+	text-align: left;
+	font-size: 4em;
+	width: auto;
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.subhead{
+	text-align: center;
+	font-size: 3em;
+	width: auto;
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p:not(.btntext) {
+	line-height: 1.5;
+	font-size: 19px;
+}
+
+.indent {
+	text-indent: 20px;
+	font-size: 19px;
+}
+
+address {
+	display: inline;
+}
+
+.addressline {
+	display: inline;
+}
+
+
+
+
+
+/* ============================================================ div styles ============================================================ */
+
+.verticalcenter {
+	align-items: center;
+	vertical-align: middle;
+	display: flex;
+}
+
+.leftside {
+	float: left;
+	width: 35%;	
+}
+
+.leftsidelong {
+	float: left;
+	width: 80%;
+	vertical-align: middle;
+	contain: layout;
+	align-items: center;
+}
+
+.rightside {
+	float: right;
+	width: 65%;
+	padding-left: 20px;
+}
+	
+.rightsideshort {
+	float: right;
+	max-width: 20%;
+	contain: layout;
+	padding: 20px;
+	margin-top: 20px;
+	max-height: 95%;
+}	
+
+.faceimg {
+	width: 100%;
+	border-radius: 20px;
+}
+
+.card{
+	padding: 20px;
+	margin-top: 20px;
+	height: 95%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.inline div {
+	display: inline;
+}
+
+
+
+
+/* ============================================================ footer styles ============================================================ */
+
+#footer {
+	background: rgba(10, 10, 10, 0.6);
+	transition: 0.2s ease;
+	border-radius: 20px;
+	padding: 15px 15px;
+	float: bottom;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 19px;
+}
+
+#footer:hover {
+	background: rgba(10, 10, 10, 1);
+	transition: 0.2s ease;
+}
+
+#footer ul {
+	display: inline;
+}
+
+#footer ul li {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+
+
+
+/* ============================================================ Responsive layout ============================================================ */
+@media screen and (max-width: 1000px) {
+	
+	.leftside, .rightside {
+		width: 100%;
+		padding: 0;
+	}
+	.horizontal li{
+		display: block;
+	}
+	
+	.flag {
+		border-radius: 2px;
+	}
+	
+	nav#top:hover {
+		font-size: 1.5em;
+	}
+	
+	.title {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 3000px) {
+	body {
+		font-size: 2em;
+	}
+	
+	.flag {
+		border-radius: 6px;
+	}
+}
+
+@media screen and (min-width: 4000px) {
+	body {
+		font-size: 3em;
+	}
+	
+	.flag {
+		border-radius: 9px;
+	}
+}
