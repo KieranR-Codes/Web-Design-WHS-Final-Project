@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KRTAS - Websites</title>
+<meta charset="UTF-8">
+<meta charset="description" content="A showcase of my websites">
+<meta charset="keywords" content="kieran rose art showcase websites">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- This website was created by: 
+	Author: Kieran Rose
+	Date: 1/09/2025
+	Project: Final Project, Website Display, page3.html
+-->
+
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+<link href="../css/index_styles.css" rel="stylesheet">
+<link href="../css/web_view_styles.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+<div id="pagetop"></div>
+<div class="row verticalcenter" id="gray">
+	<div class="title card leftsidelong">
+		<h1>My Websites</h1>
+	</div>
+	<div class="rightsideshort">
+		<img src="../images/logo.png" alt="my logo" class="logo">
+	</div>
+</div>
+</header>
+
+<nav id="top">
+	<ul class="horizontal">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="page2.html">Best&#8232;Works&#8232;</a></li>
+		<li><a href="page3.html">Websites</a></li>
+		<li><a href="page4.html">Animation</a></li>
+		<li><a href="page5.html">Music</a></li>
+		</ul>
+</nav>
+
+<main>
+<br>
+<p class="center" id="gray">This page will give you a preview of the previous websites I have created. Use the dropdown to select a website and then press the "Refresh" button to reload the page. If you would like to see all the websites I have made, click <a href="https://drive.google.com/drive/folders/1IIr-D1kJ0ZcOvjYG7PtnMtMJM3Y72zT9?usp=sharing" id="txtlink" target="_blank">This Link</a> , <em>Files must be downloaded for them to work properly.</em></p>
+
+<br>
+
+<h2 class="subhead" id="gray">Website Viewer</h2>
+<br>
+<div class="inline">
+	<div>
+		<select name="Select a Website" id="webselect">
+			<option value="../web/firstweb/index.html">My First Website</option>
+			<option value="../web/mypage/index.html">My Webpage</option>
+			<option value="../web/liveclock/index.html">Live Clock</option>
+			<option value="../web/countries/assignment12p1.html">Big and Small Countries</option>
+		</select>
+	</div>
+	<div>
+		<button type="button" id="graybtn" onClick="frameRefresh()">
+			<p class="btntext">Refresh</p>
+		</button>
+	</div>
+</div>
+<br>
+<br>
+
+<div align="center">
+	<iframe src="../web/firstweb/index.html" title="webpage" class="webframe" id="frame"></iframe>
+</div>
+<br>
+<br>
+
+
+<div id="gray">
+	<p class="center">Learning how to make my websites appear inside this website was quite simple. First, I had to figure out what kind of element I needed to use to display different content. I found out it was an iFrame, which can also be used to display other websites. Next, I had to choose and download the websites I have made and place them in a folder along with my project. After choosing 4 websites, I reused some JavaScript I learned for the Big and Small Countries website to update the website selection. The Big and Small Countries website is also displayed on this website. Most of the code and tags I learned to make this were learned from <a href="https://www.w3schools.com/" id="txtlink" target="_blank">W3Schools</a>.</p>
+</div>
+
+</main>
+
+<footer>
+	<div id="footer">
+		<ul class="horizontal">
+			<li>Phone: <a href="tel:+16123943188" id="txtlink" target="_blank">+1 (612) 394-3188</a></li>
+			<li>Personal Email: <a href="mailto:kieran_rose5905@icloud.com" id="txtlink" target="_blank">kieran_rose5905@icloud.com</a></li>
+			<li>School Email: <a href="mailto:rosekie000@isd284.com" id="txtlink" target="_blank">rosekie000@isd284.com</a></li>
+			<li>Address: <address>1 Ice Stock Ave, McMurdo Station, Antarctica</address></li>
+			<li><a href="#pagetop" id="txtlink">Back to Top</a></li>
+		</ul>
+	</div>
+</footer>
+
+<script src="../js/iframescript.js"></script>
+
+</body>
+
+
+
+</html>
