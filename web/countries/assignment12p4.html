@@ -1,0 +1,136 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+
+<head>
+
+<title>Travel and Conclusions</title>
+
+<link rel="stylesheet" href="awesomestyles.css">
+<meta charset="UTF-8">
+<meta charset="description" content="Final Summary and Travel Info">
+<meta charset="keywords" content="Kieran Rose Conclusions and Travel">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This website is created by:
+	Author: Kieran Rose
+	Date: June 2, 2024
+	Project: assignment12p4.html
+	-->
+
+</head>
+
+<body>
+
+<!--
+Div tags for the nav-bar.
+-->
+<div class="nav">
+  <a class="first" href="assignment12p1.html">Main Page</a>
+  <a class="second" href="assignment12p2.html">Rankings</a>
+  <a href="assignment12p3.html">More Country Info</a>
+  <a href="assignment12p4.html">Travel and Conclusions</a>
+  <a onClick="darkSwitch()" class="right" id="dark">Switch to Dark Mode</a>
+</div>
+
+<h1 class="title"><strong>The world's largest and smallest countries.</strong><sub class="small">(By land area)</sub>: More Info</h1>
+<br>
+<center><p>This page has a dropdown menu with every country in it. This dromdown menu will take you to the tourist website or closest equivalent for each country. This page also has a conclusion and project summary.</p></center>
+<br>
+<br>
+<hr>
+<h2>Where Would You Like To Go?</hr>
+<center><p>All you have to do to reach the tourist website of any of the 20 countries in this website.</p></center>
+<h3>Where To?</h3>
+<select name="Choose A Country" id="travel">
+    <option value="none">Select...</option>
+    <option value="https://www.visitrussia.com/">Russia</option>
+    <option value="https://travel.destinationcanada.com/en-us">Canada</option>
+    <option value="https://english.www.gov.cn/services/visitchina">China</option>
+	<option value="https://www.visittheusa.com/">USA</option>
+	<option value="https://visitbrasil.com/en/">Brazil</option>
+	<option value="https://www.australia.com/en-us">Australia</option>
+	<option value="https://www.incredibleindia.org/content/incredible-india-v2/en.html">India</option>
+	<option value="https://www.argentina.travel/en">Argentina</option>
+	<option value="https://kazakhstan.travel/en">Kazakhstan</option>
+	<option value="https://www.algeria-cgny.org/tourism/">Algeria</option>
+    <option value="https://www.vaticancityguide.org/">Vatican City</option>
+    <option value="https://www.visitmonaco.com/en">Monaco</option>
+    <option value="https://naurutourism.com.nr/">Nauru</option>
+	<option value="https://www.timelesstuvalu.com/">Tuvalu</option>
+	<option value="https://www.visitsanmarino.com/pub1/VisitSM/en/">San Marino</option>
+	<option value="https://tourismus.li/en/">Liechtenstein</option>
+	<option value="https://www.rmiocit.org/tourism">Marshall Islands</option>
+	<option value="https://www.visitstkitts.com/">Saint Kitts and Nevis</option>
+	<option value="https://visitmaldives.com/en">Maldives</option>
+	<option value="https://www.visitmalta.com/en/">Malta</option>
+</select>
+<center><p>*WARNING* If you are considering traveling, please research country guidelines, restrictions and laws to avoid accidental wrong-doing or exit-ban.</p></center>
+<br>
+<center><a id="fly" style="display: none;" href="" target="_blank"><img src="fly.png" width="750px" height="" alt="Plane button" style="border-radius: 10px;"></a></center>
+<br>
+<br>
+<hr>
+<h2>Conclusion</h2>
+<br>
+<h3>Summary</h3>
+<center><p>All in all, This website was a lot. The first page isn't too long with just basic introduction but pages 2 and 3 are a lot. Page 2 first gives you the rankings for top 10 biggest and smallest countries. But, once you get to the interactive section, there is a lot more. There are 200 different combination for the combines size comparison sections. I would have made 300 but, by comparing the world's largest countries to the world's smallest, all of the small countries would be nearly or fully impossible to see. The time zone section was also a lot. I had to get the time zones for all 20 countries, put them into this website and account for countries that observe daylight savings time. Page 3 was also its own beast. There was a lot of information in page 3 that had to be found from a lot of different sources. Page four is kind of like page 1. Page 4 doesn't have much to offer besides the travel button.</p></center>
+<br>
+<h3>Why?</h3>
+<center><p>This project was the first and only idea that I had in mind when starting the assignment. I knew straight away what I was going to do and how to make JavaScript sections for it. I almost instantly knew what to do on each page. There were just some things I changed later that were even better. The only downside to what I did decide to do was how long it took. I compiled 200 images in photoshop and spent almost an entire Saturday making the time zone section because of all of the research, troubleshooting and more troubleshooting that I had to do. One big help I had for page 2 was a websize calles the True Size of where you can compare the true sizez of countries. That saved at least a couple days worth of researching. Page 3 also took almost an entire day because of more research.</p></center>
+<br>
+<br>
+<h2 style="font-size: 100px;">That's All I Have, The End!</h2>
+<script>
+//Function to make travrl button appear
+function flyNow() {
+	//Creates variables for to elements above
+	var travel = document.getElementById("travel");
+	var fly = document.getElementById("fly");
+	//detects if user selects a country
+	if ( travel.value !== "none") {
+		//changes fly button display mode and link
+		fly.style.display = "block";
+		fly.href = travel.value;
+	}
+	//hides travel button if no country is selected
+	else {
+		fly.style.display = "none";
+	}
+}
+
+//Function to switch to Dark Mode
+function darkSwitch() {
+	//Makes a style variable
+	var style = document.body;
+	//Uses the style variable to toggle a CSS class
+	style.classList.toggle("darkmode");
+	//Checks body class to keep button text relevant
+	if(document.body.classList.contains("darkmode")) {
+	//changes text after class is switched
+	document.getElementById("dark").textContent = "Switch to Light Mode";
+	}
+	//Else statement if dark mode is being switched off
+	else {
+	document.getElementById("dark").textContent = "Switch to Dark Mode";
+	}
+}
+//calls flyNow function
+flyNow();
+setInterval ("flyNow()", 10);
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+
+<head>
+
+<title>Assignment #9 Kieran Rose</title>
+
+<link rel="stylesheet" href="stylish.css">
+<meta charset="UTF-8">
+<meta charset="description" content="JavaScript code showcase">
+<meta charset="keywords" content="Assignment 9 Kieran Rose">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<!--This website is created by:
+	Author: Kieran Rose
+	Date: May 13, 2024
+	Project: assignment9.html
+	-->
+<style>
+h5{
+	font-family: "helvetica";
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid rgba(0, 0, 200, 0.6);
+	color: rgba(0, 0, 250, 0.6);
+	box-shadow: 11px 12px 12px rgba(0, 0, 200, 0.4);
+	border-radius: 12px;
+	padding: 16px 10px;
+	display: inline-block;
+}
+
+#clock {
+	font-family: Impact;
+	color: rgba(1, 2, 194, 1.0);
+	font-size: 40px;
+	text-align: center;
+
+}
+
+.clk {
+	text-align: center;
+	
+}
+</style>
+</head>
+
+<body class="light">
+
+<h2>Time and Date</h2>
+<p id="date"></p>
+
+<button type="button" onClick="document.getElementById('date').innerHTML=Date()">Click on this button to display the time and date.</button>
+
+
+<br>
+<br>
+
+<h5>Player: Kieran Rose</h5>
+
+
+<h2>Print</h2>
+
+<p>Click on the button to print the current page.</p>
+<button onClick="window.print()">Print this page</button>
+
+<p>Click "Eat" to eat a cookie...</p>
+<p id="cookie">&#x1F36A </p>
+<button onClick="myFunction()">Eat</button>
+
+
+
+<h2 class="clk">Live Clock</h2>
+
+<p id="clock"></p>
+
+<!--Changing the number-->
+<br>
+<br>
+<br>
+
+<p>When you click this button, it will call a Script that eill change toggle the background between dark mode and light mode. It will do this by first creating a variable to call the body class. Then, it will use this variable to toggle the other class for the web page. You can find the script on <a href="https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp" target="_blank">W3Schools</a>.</p>
+<br>
+<button onClick="styleSwitch()">Switch between light and dark mode...</button>
+<br>
+<br>
+<br>
+<br>
+<a href="index.html"><button>Go to page 1...</button></a>
+<!--Button to call the light/dark style-->
+
+
+<script>
+
+
+
+
+const para = document.querySelector('h5');
+para.addEventListener('click', updateName);
+
+function updateName(){
+const name = prompt ('Enter a new name...');
+	if (confirm("Do you want to change the name?") ==true) {
+	para.textContent = 'Player 1: ' + name;
+	}
+
+}
+
+//eat the cookie
+
+function myFunction(){
+	const element=document.getElementById("cookie");
+	element.remove();
+
+}
+
+
+//Live Clock
+
+function currentTime() {
+	var date = new Date(); /*Creating object of date class*/
+	var hour = date.getHours();
+	var min = date.getMinutes();
+	var sec = date.getSeconds();
+	hour = updateTime(hour);
+	min = updateTime(min);
+	sec = updateTime(sec);
+	document.getElementById("clock").innerHTML = hour + " : " + min + " : " + sec; /* adding time to the div */
+	var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+	if (k < 10) {
+	return "0" + k;
+	}
+	else {
+	return k;
+	}
+}
+
+currentTime(); /*calling currentTime() function to initiate the process */
+
+
+//Dark mode function
+function styleSwitch() {
+	//Creating variable to call the body of the document to use later
+	var style = document.body;
+	//Using variable to change the body class
+	style.classList.toggle("dark");
+	
+}
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

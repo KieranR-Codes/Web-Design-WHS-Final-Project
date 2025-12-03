@@ -1,0 +1,99 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+<head>
+<title>Index File</title>
+
+<link rel="stylesheet" href="stylish.css">
+<meta charset="UTF-8">
+<meta charset="description" content="Intro to JavaScript">
+<meta charset="keywords" content="Kieran Rose Assigment 9">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<!--This website is created by:
+	Author: Kieran Rose
+	Date: May 10, 2024
+	Project: Index.html
+	-->
+</head>
+
+<body class="light">
+
+<p>A JavaScript program is a list of statements to be executed by the computer.</p>
+<p id="adding"></p>
+
+<p>Strings of text can be written with double or single quotes.</p>
+<p id="demo"></p>
+
+<p>JavaScript uses arithmetic operations to compute values similar to algebra</p>
+<p id="math"></p>
+
+
+<form>
+<input type="button" value="Open W3Schools" onClick="openWin()"> 
+
+
+<p>Increasing and Decreasing Text Sizes</p>
+<p id="friday"></p> 
+<button type="Button" onClick="demoChangeFontSize() ">Friday</button>
+</form>
+<br>
+<br>
+<br>
+
+<p>When you click this button, it will call a Script that eill change toggle the background between dark mode and light mode. It will do this by first creating a variable to call the body class. Then, it will use this variable to toggle the other class for the web page. You can find the script on <a href="https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp" target="_blank">W3Schools</a>.</p>
+<br>
+<button onClick="styleSwitch()">Switch between light and dark mode...</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="assignment9.html"><button>Go to page 2...</button></a>
+<script>
+
+window.alert("Happy Friday!!!")
+
+var x, y, z 		//declares the three variables
+
+x=376;				//Assigns the value to x
+y=255;				// Assigns the value to y
+z= x + y;			//The sub of x and y
+
+document.getElementById("adding").innerHTML = "The value of z is " + z +".";
+
+
+document.getElementById("demo").innerHTML = 'Cal said "There is 18 days left of the term".';
+
+
+document.getElementById("math").innerHTML = (2434 + 4 - 1)* 8000;
+
+
+
+function openWin() {
+window.open("https://www.w3schools.com/")}
+
+document.getElementById("friday").innerHTML = "Yay, it's Friday!!!" ;
+
+var demoFontIsLarge = false ;
+function demoChangeFontSize() {
+	demoParagraph = document.getElementById("friday");
+	if(!demoFontIsLarge) {
+	demoParagraph.style.fontSize = "796%";
+	demoFontIsLarge = true; }
+	else{
+	demoParagraph.style.fontSize = "50%";
+	demoFontIsLarge = false;}
+	}
+
+//Dark mode function
+function styleSwitch() {
+	//Creating variable to call the body of the document to use later
+	var style = document.body;
+	//Using variable to change the body class
+	style.classList.toggle("dark");
+	
+}
+</script>
+
+</body>
+</html>

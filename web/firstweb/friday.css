@@ -1,0 +1,36 @@
+@Charset "UTF-8";
+
+/* Author: Kieran Rose
+	Date: 5/08/2024
+	Project: Assignment #7
+
+*/
+
+html{
+	background-color:rgba(255, 100, 20, 1.00);
+	margin:0px auro;
+}
+
+body{background-color:rgba(60, 1, 234, 1.00);
+	width:90%;
+	max-width:500rem;
+	padding-left:2%;
+	padding-right:2%;
+	margin:0px auto;
+box-shadow:rgba(100,100,100, 1.0) 5px 0px 25px, rgba(170,60,45, 1.00)-5px 0px 25px;}
+
+table{border-color: #2eb8c6;}
+
+td{background-color: pink;}
+
+img{border: 12px dashed #daf20b;}
+
+button{
+	font-family: Times New Roman;
+	color: blue;
+	font-size: 25px;
+	font-weight: bold italic;
+	border-radius: 15px;
+	border-style: dotted;
+	border-color: pink;
+}

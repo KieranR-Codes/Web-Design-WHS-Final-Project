@@ -1,0 +1,484 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+
+<head>
+
+<title>Country Comparisons</title>
+
+<link href="awesomestyles.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta charset="description" content="The rankings and interactive comparisons for the top to largest and smallest countries.">
+<meta charset="keywords" content="Kieran Rose Country Comparisons">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This website is created by:
+	Author: Kieran Rose
+	Date: May 24, 2024
+	Project: assignment12p2.html
+	-->
+
+</head>
+
+<body>
+
+<main>
+
+<!--
+Div tags for the nav-bar.
+-->
+<div class="nav">
+  <a class="first" href="assignment12p1.html">Main Page</a>
+  <a class="second" href="assignment12p2.html">Rankings</a>
+  <a href="assignment12p3.html">More Country Info</a>
+  <a href="assignment12p4.html">Travel and Conclusions</a>
+  <a onClick="darkSwitch()" class="right" id="dark">Switch to Dark Mode</a>
+</div>
+
+<h1 class="title"><strong>The world's largest and smallest countries</strong><sub class="small">(By land area)</sub><strong> : Comparisons.</strong></h1>
+<br>
+<br>
+
+<hr>
+<h2>The Country Rankings: Top 10</h2>
+<h3>About the Rankign System:</h3>
+<p>The area of each country is measured in square kilometers(km<sup>2</sup>). The table below displays the position of each country(1st, 2nd 3rd...), the country name and flag, the capital city of each country and the total land area. As established on the main page, most huge countries are not landlocked and most small countries comprise of small islands. The size comparisons below will show the relative sizes of each country if they were put on top of each other. The "What Time Is It?" Section will show you the time zone(s) of each of the twenty locations. <em>*Disclaimer* country size comparisons may not be 100% accurate.</em></p>
+
+<center><table border="10px">
+
+<tr>
+<td colspan="4" width="1100px">World's Largest Countries</td>
+<td colspan="4" width="1100px">World's Smallest Countries</td>
+</tr>
+<th>
+<th>
+<th>
+<th>
+<th>
+<th>
+<th>
+<th>
+<tr>
+<td>Rank</td>
+<td>Country Name</td>
+<td>Capital</td>
+<td>Area(km<sup>2</sup>)</td>
+<td>Rank</td>
+<td>Country Name</td>
+<td>Capital</td>
+<td>Area(km<sup>2</sup>)</td>
+</tr>
+
+<tr>
+<td>1st</td>
+<td>Russia <img src="flags/rusflag.png" width="" height="40" alt="Russian Flag"></td>
+<td>Moscow</td>
+<td> 17,098,242 km<sup>2</sup> </td>
+<td>1st</td>
+<td>Vatican City <img src="flags/vatflag.png" width="" height="40" alt="Vatican Flag"></td>
+<td>Vatican City</td>
+<td>0.44 km<sup>2</sup></td>
+</tr> 
+
+<tr>
+<td>2nd</td>
+<td>Canada <img src="flags/canflag.png" width="" height="40" alt="Canadian Flag"></td>
+<td>Ottawa</td>
+<td>9,984,670 km<sup>2</sup></td>
+<td>2nd</td>
+<td>Monaco <img src="flags/monflag.png" width="" height="40" alt="Monacan Flag"></td>
+<td>No Capital</td>
+<td>1.95 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>3rd</td>
+<td> People's Republic of China <img src="flags/chiflag.png" width="" height="40" alt="Chinese Flag"> </td>
+<td>Beijing</td>
+<td>9,596,960 km<sup>2</sup></td>
+<td>3rd</td>
+<td>Nauru <img src="flags/nauflag.png" width="" height="40" alt="Nauruan Flag"></td>
+<td>Yaren</td>
+<td>21 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>4th</td>
+<td>United States of America <img src="flags/usaflag.png" width="" height="40" alt="American Flag"></td>
+<td> Washington D.C. </td>
+<td>9,525,067 km<sup>2</sup></td>
+<td>4th</td>
+<td>Tuvalu <img src="flags/tuvflag.png" width="" height="40" alt="Tuvaluan Flag"></td>
+<td>Funafuti</td>
+<td>26 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>5th</td>
+<td>Brazil <img src="flags/brzflag.png" width="" height="40" alt="Brazilian Flag"></td>
+<td>Brasília</td>
+<td>8,510,346 km<sup>2</sup></td>
+<td>5th</td>
+<td>San Marino <img src="flags/sanflag.png" width="" height="40" alt="Sammarinese Flag"></td>
+<td>San Marino</td>
+<td>61 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>6th</td>
+<td>Australia <img src="flags/ausflag.png" width="" height="40" alt="Australian Flag"></td>
+<td>Canberra</td>
+<td>7,741,220 km<sup>2</sup></td>
+<td>6th</td>
+<td>Liechtenstein <img src="flags/lieflag.png" width="" height="40" alt="Liechtensteiner Flag"></td>
+<td>Vaduz</td>
+<td>160 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>7th</td>
+<td>India <img src="flags/indflag.png" width="" height="40" alt="Indian Flag"></td>
+<td>New Delhi</td>
+<td>3,287,263 km<sup>2</sup></td>
+<td>7th</td>
+<td>Marshall Islands <img src="flags/marflag.png" width="" height="40" alt="Marshallese Flag"></td>
+<td>Majuro</td>
+<td>181 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>8th</td>
+<td>Argentina <img src="flags/argflag.png" width="" height="40" alt="Argentinian Flag"></td>
+<td>Buenos Aires</td>
+<td>2,780,400 km<sup>2</sup></td>
+<td>8th</td>
+<td>Saint Kitts and Nevis <img src="flags/saiflag.png" width="" height="40" alt="Kittitian Nevisian Flag"></td>
+<td>Basseterre</td>
+<td>261 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>9th</td>
+<td>Kazakhstan <img src="flags/kazflag.png" width="" height="40" alt="Kazazkstani Flag"></td>
+<td>Astana</td>
+<td>2,724,910 km<sup>2</sup></td>
+<td>9th</td>
+<td>Republic of Maldives <img src="flags/maldflag.png" width="" height="40" alt="Maldivian Flag"></td>
+<td>Malé</td>
+<td>298 km<sup>2</sup></td>
+</tr>
+
+<tr>
+<td>10th</td>
+<td>Algeria <img src="flags/algflag.png" width="" height="40" alt="Algerian Flag"></td>
+<td>Algiers</td>
+<td>2,381,741 km<sup>2</sup></td>
+<td>10th</td>
+<td>Malta <img src="flags/maltflag.png" width="" height="40" alt="Maltese Flag"></td>
+<td>Valletta</td>
+<td>361 km<sup>2</sup></td>
+</tr>
+</table></center>
+<br>
+<br>
+
+<hr>
+<h2>More Country Comparisons(Interactive)</h2>
+<br>
+
+<h3>Compare Countries by size</h3>
+<p class="ind">Compare two countries to see what they would look like side by side(Without mercator projection). The smaller country will always be on top. The first country you select will be white. The second country will be black.</p>
+<br>
+<h4 class="ind">Compare an big country to a big country</h4>
+<select name="Choose Your First Large Country" id="select1">
+    <option value="none">Select...</option>
+    <option value="russia">Russia</option>
+    <option value="canada">Canada</option>
+    <option value="china">China</option>
+	<option value="usa">USA</option>
+	<option value="brazil">Brazil</option>
+	<option value="australia">Australia</option>
+	<option value="india">India</option>
+	<option value="argentina">Argentina</option>
+	<option value="kazakhstan">Kazakhstan</option>
+	<option value="algeria">Algeria</option>
+</select>
+<select name="Choose Your Second Large Country" id="select2">
+    <option value="none">Select...</option>
+    <option value="russia">Russia</option>
+    <option value="canada">Canada</option>
+    <option value="china">China</option>
+	<option value="usa">USA</option>
+	<option value="brazil">Brazil</option>
+	<option value="australia">Australia</option>
+	<option value="india">India</option>
+	<option value="argentina">Argentina</option>
+	<option value="kazakhstan">Kazakhstan</option>
+	<option value="algeria">Algeria</option>
+  </select>
+<button onClick="select01()">Submit</button>
+<br>
+<br>
+<br>
+<center><div id="divimg1"><p>Choose two countries...</p></div></center>
+<br>
+<br>
+<hr>
+<h4 class="ind">Compare a small country to a small country</h4>
+<select name="Choose Your First Small Country" id="select3">
+    <option value="none">Select...</option>
+    <option value="vatican">Vatican City</option>
+    <option value="monaco">Monaco</option>
+    <option value="nauru">Nauru</option>
+	<option value="tuvalu">Tuvalu</option>
+	<option value="sanmarino">San Marino</option>
+	<option value="liechtenstein">Liechtenstein</option>
+	<option value="marshallislands">Marshall Islands</option>
+	<option value="saintkitts">Saint Kitts and Nevis</option>
+	<option value="maldives">Maldives</option>
+	<option value="malta">Malta</option>
+  </select>
+<select name="Choose Your Second Small Country" id="select4">
+    <option value="none">Select...</option>
+    <option value="vatican">Vatican City</option>
+    <option value="monaco">Monaco</option>
+    <option value="nauru">Nauru</option>
+	<option value="tuvalu">Tuvalu</option>
+	<option value="sanmarino">San Marino</option>
+	<option value="liechtenstein">Liechtenstein</option>
+	<option value="marshallislands">Marshall Islands</option>
+	<option value="saintkitts">Saint Kitts and Nevis</option>
+	<option value="maldives">Maldives</option>
+	<option value="malta">Malta</option>
+  </select>
+<button onClick="select02()">Submit</button>
+<br>
+<br>
+<br>
+<center><div id="divimg2"><p>Choose two countries...</p></div></center>
+<br>
+<br>
+<hr>
+<br>
+<h3>What Time is it?</h3>
+<select name="Choose A Country" id="timeopt">
+    <option value="none">Select...</option>
+    <option value="russia">Russia</option>
+    <option value="canada">Canada</option>
+    <option value="Asia/Shanghai">China</option>
+	<option value="usa">USA</option>
+	<option value="brazil">Brazil</option>
+	<option value="australia">Australia</option>
+	<option value="Asia/Colombo">India</option>
+	<option value="America/Argentina/Buenos_Aires">Argentina</option>
+	<option value="Asia/Qyzylorda">Kazakhstan</option>
+	<option value="Africa/Algiers">Algeria</option>
+    <option value="vatican">Vatican City</option>
+    <option value="monaco">Monaco</option>
+    <option value="Pacific/Nauru">Nauru</option>
+	<option value="Pacific/Funafuti">Tuvalu</option>
+	<option value="sanmarino">San Marino</option>
+	<option value="liechtenstein">Liechtenstein</option>
+	<option value="Pacific/Majuro">Marshall Islands</option>
+	<option value="America/Port_of_Spain">Saint Kitts and Nevis</option>
+	<option value="Indian/Maldives">Maldives</option>
+	<option value="malta">Malta</option>
+</select>
+<p class="clock" id="clk"></p> 
+</main>
+
+<script>
+
+/*function to output an image for the first selection */
+function select02() {
+	/* Creating variables for use in later functions */
+	var opt3 = document.getElementById("select3");
+	var opt4 = document.getElementById("select4");
+	
+	/*detects if the user hasn't input a country and makes an <p> tag that says 'INVALID' */
+	if (opt3.value === "none") {
+		document.getElementById("divimg2").innerHTML = "<p><strong>INVALID</strong></p>";
+	} else if (opt4.value === "none") {
+		document.getElementById("divimg2").innerHTML = "<p><strong>INVALID</strong></p>";
+	} else {
+		/*makes image tag that displays the two countries that the user selected */
+		document.getElementById("divimg2").innerHTML = '<img src="outlines/' + opt3.value + opt4.value + '.png" width="" height="500" alt="' + opt3.value + '  and  ' + opt4.value + ' size comparison">';
+	}
+}
+
+/*function to output an image for the first selection */
+function select01() {
+	/* Creating variables for use in later functions */
+	var opt1 = document.getElementById("select1");
+	var opt2 = document.getElementById("select2");
+	
+	/*detects if the user hasn't input a country and makes an <p> tag that says 'INVALID' */
+	if (opt1.value === "none") {
+		document.getElementById("divimg1").innerHTML = "<p><strong>INVALID</strong></p>";
+	} else if (opt2.value === "none") {
+		document.getElementById("divimg1").innerHTML = "<p><strong>INVALID</strong></p>";
+	} else {
+		/*makes image tag that displays the two countries that the user selected */
+		document.getElementById("divimg1").innerHTML = '<img src="outlines/' + opt1.value + opt2.value + '.png" width="" height="500" alt="' + opt1.value + '  and  ' + opt2.value + ' size comparison">';
+	}
+}
+
+function timeConvert() {
+	// Creates the date variable
+	var date = new Date();
+	//Creates time zone variable
+	var zone = document.getElementById("timeopt");
+
+	//Detects if no country is selected
+	if (zone.value === "none") {
+		document.getElementById("clk").innerHTML = "Please Choose a Country";
+		}
+		
+	//All else-if statements are for countries that use multiple time zones
+	else if (zone.value === "russia") {
+		//Creating time zone variables for each time zone used in Russia using toLocaleString to get the time zone
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Kaliningrad"});
+		var gmt3 = date.toLocaleString("en-US", {timeZone: "Europe/Moscow"});
+		var gmt4 = date.toLocaleString("en-US", {timeZone: "Europe/Samara"});
+		var gmt5 = date.toLocaleString("en-US", {timeZone: "Asia/Atyrau"});
+		var gmt6 = date.toLocaleString("en-US", {timeZone: "Asia/Urumqi"});
+		var gmt7 = date.toLocaleString("en-US", {timeZone: "Antarctica/Davis"});
+		var gmt8 = date.toLocaleString("en-US", {timeZone: "Asia/Makassar"});
+		var gmt9 = date.toLocaleString("en-US", {timeZone: "Pacific/Palau"});
+		var gmt10 = date.toLocaleString("en-US", {timeZone: "Pacific/Chuuk"});
+		var gmt11 = date.toLocaleString("en-US", {timeZone: "Pacific/Kosrae"});
+		var gmt12 = date.toLocaleString("en-US", {timeZone: "Pacific/Fiji"});
+		//Changes clock paragraph tag to display Russian time
+		document.getElementById("clk").innerHTML = "GMT +2 time: " + gmt2 + " (Kaliningrad)" + "<br>GMT +3 time: " + gmt3 + " (Moscow)" + "<br>GMT +4 time: " + gmt4 + " (Samara)" + "<br>GMT +5 time: " + gmt5 + " (Yekaterinburg)" + "<br>GMT +6 time: " + gmt6 + " (Omsk)" + "<br>GMT +7 time: " + gmt7 + " (Krasnoyarsk)" + "<br>GMT +8 time: " + gmt8 + " (Irkutsk)" + "<br>GMT +9 time: " + gmt9 + " (Yakutsk)" + "<br>GMT +10 time: " + gmt10 + " (Vladivostok)" + "<br>GMT +11 time: " + gmt11 + " (Magadan)" + "<br>GMT +12 time: " + gmt12 + " (Kamchatka)";
+	}
+	
+	else if (zone.value === "canada") {
+		//Creating time zone variables for each time zone used in Canada using toLocaleString to get the time zone
+		var gmt_8 = date.toLocaleString("en-US", {timeZone: "Pacific/Pitcairn"});
+		var gmt_7 = date.toLocaleString("en-US", {timeZone: "America/Dawson"});
+		var gmt_6 = date.toLocaleString("en-US", {timeZone: "Pacific/Easter"});
+		var gmt_5 = date.toLocaleString("en-US", {timeZone: "America/Jamaica"});
+		var gmt_4 = date.toLocaleString("en-US", {timeZone: "America/Puerto_Rico"});
+		var gmt_330 = date.toLocaleString("en-US", {timeZone: "-0330"});
+		var gmt_3 = date.toLocaleString("en-US", {timeZone: "Atlantic/Bermuda"});
+		var gmt_230 = date.toLocaleString("en-US", {timeZone: "America/St_Johns"});
+		//Changes clock paragraph tag to display Canadian time
+		document.getElementById("clk").innerHTML = "GMT -8 time: " + gmt_8 + " (Vancouver - Standard Time)" + "<br>GMT -7 time: " + gmt_7 + " (Whitehorse - Year-round Time)" + "<br>GMT -6 time: " + gmt_6 + " (Regina - Year-round Time)" + "<br>GMT -5 time: " + gmt_5 + " (Winnipeg - Daylight Savings Time)" + "<br>GMT -4 time: " + gmt_4 + " (Montréal - Daylight Savings Time)" + "<br>GMT -3:30 time: " + gmt_330 + " (Newfoundland - Standard Time)" + "<br>GMT -3 time: " + gmt_3 + " (Halifax - Daylight Savings Time)" + "<br>GMT -2:30 time: " + gmt_230 + " (Saint John's - Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "usa") {
+		//Creating time zone variables for each time zone used in America using toLocaleString to get the time zone
+		var gmt_10 = date.toLocaleString("en-US", {timeZone: "Pacific/Tahiti"});
+		var gmt_9 = date.toLocaleString("en-US", {timeZone: "Pacific/Gambier"});
+		var gmt_8 = date.toLocaleString("en-US", {timeZone: "Pacific/Pitcairn"});
+		var gmt_7 = date.toLocaleString("en-US", {timeZone: "America/Dawson"});
+		var gmt_6 = date.toLocaleString("en-US", {timeZone: "Pacific/Easter"});
+		var gmt_5 = date.toLocaleString("en-US", {timeZone: "America/Jamaica"});
+		var gmt_4 = date.toLocaleString("en-US", {timeZone: "America/Anguilla"});
+		//Changes clock paragraph tag to display American time
+		document.getElementById("clk").innerHTML = "GMT -10 time: " + gmt_10 + " (Honolulu - Standard Time)" + "<br>GMT -9 time: " + gmt_9 + " (Adak - Standard Time)" + "<br>GMT -8 time: " + gmt_8 + " (Seattle - Standard Time)" + "<br>GMT -7 time: " + gmt_7 + " (San Diego - Daylight Savings Time)" + "<br>GMT -6 time: " + gmt_6 + " (Denver - Daylight Savings Time)" + "<br>GMT -5 time: " + gmt_5 + " (Minneapolis - Daylight Savings Time)" + "<br>GMT -4 time: " + gmt_4 + " (New York - Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "brazil") {
+		//Creating time zone variables for each time zone used in Brazil using toLocaleString to get the time zone
+		var gmt_5 = date.toLocaleString("en-US", {timeZone: "America/Jamaica"});
+		var gmt_4 = date.toLocaleString("en-US", {timeZone: "America/Barbados"});
+		var gmt_3 = date.toLocaleString("en-US", {timeZone: "Atlantic/Bermuda"});
+		var gmt_2 = date.toLocaleString("en-US", {timeZone: "Atlantic/South_Georgia"});
+		//Changes clock paragraph tag to display Brazilian time
+		document.getElementById("clk").innerHTML = "GMT -5 time: " + gmt_5 + " (Rio Branco)" + "<br>GMT -4 time: " + gmt_4 + " (Manaus)" + "<br>GMT -3 time: " + gmt_3 + " (Campo Grande)" + "<br>GMT -2 time: " + gmt_2 + " (Ilha de Fernando de Noronha)";
+	}
+	
+	else if (zone.value === "australia") {
+		//Creating time zone variables for each time zone used in Australia using toLocaleString to get the time zone
+		var gmt8 = date.toLocaleString("en-US", {timeZone: "Australia/Perth"});
+		var gmt930 = date.toLocaleString("en-US", {timeZone: "Australia/Adelaide"});
+		var gmt10 = date.toLocaleString("en-US", {timeZone: "Australia/Lindeman"});
+		var gmt1030 = date.toLocaleString("en-US", {timeZone: "Australia/Lord_Howe"});
+		var gmt11 = date.toLocaleString("en-US", {timeZone: "Pacific/Norfolk"});
+		//Changes clock paragraph tag to display Australian time
+		document.getElementById("clk").innerHTML = "GMT +8 time: " + gmt8 + " (Perth - Year-Round Time)" + "<br>GMT +9:30 time: " + gmt930 + " (Darwin - Year-Round Time)" + "<br>GMT +10 time: " + gmt10 + " (Brisbane - Year-Round Time)" + "<br>GMT +10:30 time: " + gmt1030 + " (Adelaide - Daylight Savings Time)" + "<br>GMT +11 time: " + gmt11 + " (Sydney - Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "vatican") {
+		//Creating time zone variables for each time zone used in Vatican City using toLocaleString to get the time zone
+		var gmt1 = date.toLocaleString("en-US", {timeZone: "Europe/Guernsey"});
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Vatican"});
+		//Changes clock paragraph tag to display Vatican time
+		document.getElementById("clk").innerHTML = "GMT +1 time: " + gmt1 + " (Standard Time)" + "<br>GMT +2 time: " + gmt2 + " (Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "monaco") {
+		//Creating time zone variables for each time zone used in Monaco using toLocaleString to get the time zone
+		var gmt1 = date.toLocaleString("en-US", {timeZone: "Europe/Guernsey"});
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Vatican"});
+		//Changes clock paragraph tag to display Monacan time
+		document.getElementById("clk").innerHTML = "GMT +1 time: " + gmt1 + " (Standard Time)" + "<br>GMT +2 time: " + gmt2 + " (Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "sanmarino") {
+		//Creating time zone variables for each time zone used in San Marino using toLocaleString to get the time zone
+		var gmt1 = date.toLocaleString("en-US", {timeZone: "Europe/Guernsey"});
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Vatican"});
+		//Changes clock paragraph tag to display Sammarinese time
+		document.getElementById("clk").innerHTML = "GMT +1 time: " + gmt1 + " (Standard Time)" + "<br>GMT +2 time: " + gmt2 + " (Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "liechtenstein") {
+		//Creating time zone variables for each time zone used in Liechtenstein using toLocaleString to get the time zone
+		var gmt1 = date.toLocaleString("en-US", {timeZone: "Europe/Guernsey"});
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Vatican"});
+		//Changes clock paragraph tag to display Liechtensteiner time
+		document.getElementById("clk").innerHTML = "GMT +1 time: " + gmt1 + " (Standard Time)" + "<br>GMT +2 time: " + gmt2 + " (Daylight Savings Time)";
+	}
+	
+	else if (zone.value === "malta") {
+		//Creating time zone variables for each time zone used in Malta using toLocaleString to get the time zone
+		var gmt1 = date.toLocaleString("en-US", {timeZone: "Europe/Guernsey"});
+		var gmt2 = date.toLocaleString("en-US", {timeZone: "Europe/Vatican"});
+		//Changes clock paragraph tag to display Maltese time
+		document.getElementById("clk").innerHTML = "GMT +1 time: " + gmt1 + " (Standard Time)" + "<br>GMT +2 time: " + gmt2 + " (Daylight Savings Time)";
+	}
+	
+	//This else statement is for countries with one time zone
+	else {
+		// use the toLocaleString() method to display the date in different timezones
+		var newDate = date.toLocaleString("en-US", {timeZone: zone.value});
+		document.getElementById("clk").innerHTML = newDate;
+		}
+}
+
+timeConvert();
+setInterval ("timeConvert()", 10);
+
+//Function to switch to Dark Mode
+function darkSwitch() {
+	//Makes a style variable
+	var style = document.body;
+	//Uses the style variable to toggle a CSS class
+	style.classList.toggle("darkmode");
+	//Checks body class to keep button text relevant
+	if(document.body.classList.contains("darkmode")) {
+	//changes text after class is switched
+	document.getElementById("dark").textContent = "Switch to Light Mode";
+	}
+	//Else statement if dark mode is being switched off
+	else {
+	document.getElementById("dark").textContent = "Switch to Dark Mode";
+	}
+}
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

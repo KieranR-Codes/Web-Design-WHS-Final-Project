@@ -1,0 +1,111 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+
+<head>
+
+<title>Big and Small Countries</title>
+
+<link href="awesomestyles.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta charset="description" content="Top 10 largest and smallest countries">
+<meta charset="keywords" content="Kieran Rose Largest and smallest countries">
+<meta charset="author" content="Kieran Rose">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--This website is created by:
+	Author: Kieran Rose
+	Date: May 21, 2024
+	Project: assignment12p1.html
+	-->
+
+</head>
+
+<body>
+
+<!--
+Div tags for the nav-bar.
+-->
+<div class="nav">
+  <a class="first" href="assignment12p1.html">Main Page</a>
+  <a class="second" href="assignment12p2.html">Rankings</a>
+  <a href="assignment12p3.html">More Country Info</a>
+  <a href="assignment12p4.html">Travel and Conclusions</a>
+  <a onClick="darkSwitch()" class="right" id="dark">Switch to Dark Mode</a>
+</div>
+
+<h1 class="title"><strong>The world's largest and smallest countries.</strong><sub class="small">(By land area)</sub></h1>
+<br>
+
+<hr>
+<h2>Some Background Info</h2>
+<br>
+
+<p>This Website will tell you about the world's largest and smallest countries. This website will give you information about each country. This website will also have interactive features on the second page. Finally, this website gives you links to travel websites for traveling to each country if you choose to.</p>
+<br>
+<br>
+
+<hr>
+<h2>Table of Contents</h2>
+<br>
+
+<h3>Page 1</h3>
+<p class="ind">Page 1 is where you currently are. Page 1 gives you background info on the other pages.</p>
+<br>
+
+<h3>Page 2</h3>
+<p class="ind">Page 2, "Rankings", will show you the top five biggest and smallest countries in the world. The page also features several interactive size comparisons and time zone display.</p>
+<br>
+
+<h3>Page 3</h3>
+<p class="ind">Page 3, "More Country Info", has more extra info about each country with tables for even more information.</p>
+<br>
+
+<h3>Page 4</h3>
+<p class="ind">Page 4, "Travel and Conclusions", There will also be travel for each country, and a conclusion.</p>
+<br>
+
+<hr>
+<h2>The Bigger Countries</h2>
+<center><img src="outlines/usa1.png" width="" height="100px" alt="USA Country outline"></center>
+<p align="center">The bigger countries are usually more familiar to most people like the USA, China and Russia. They usually have the largest populations in the world and are home to diverse landscapes. Most big countries are also not land-locked having at least one coastline. Fun Fact: The biggest country in the world is 39,086,913.6 times bigger than the smallest country.</p>
+<br>
+
+<hr>
+<h2>The Smaller Countries</h2>
+<center><img src="outlines/sanmarino1.png" width="" height="100px" alt="San Marino Country Outline"></center>
+<p align="center">The smaller countries are usually countries that aren't as known as others like Tuvalu, Liechtenstein and Saint Kitts and Nevis. Most small countries are also island countries as well. There are some exceptions though. The smallest country in the world is a land-locked country. It also contains only one city and that city is a very important religious center. Fun Fact: If you combined the sizes of all of the 10 smallest countries in to one land mass, that land mass would still be the 171st(out of 195) smallest country in the world.</p>
+<br>
+
+
+<script>
+//Function to switch to Dark Mode
+function darkSwitch() {
+	//Makes a style variable
+	var style = document.body;
+	//Uses the style variable to toggle a CSS class
+	style.classList.toggle("darkmode");
+	//Checks body class to keep button text relevant
+	if(document.body.classList.contains("darkmode")) {
+	//changes text after class is switched
+	document.getElementById("dark").textContent = "Switch to Light Mode";
+	}
+	//Else statement if dark mode is being switched off
+	else {
+	document.getElementById("dark").textContent = "Switch to Dark Mode";
+	}
+}
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
